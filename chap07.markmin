@@ -3,7 +3,7 @@
 
 web2pyでフォームを構築するには以下の4通りの方法があります：
 There are four distinct ways to build forms in web2py:
-- ``FORM`` はHTMLヘルパに関して低レベルの実装を提供します。FORMオブジェクトはHTMLへとシリアライズすることができ、そこに含まれるフィールドについて把握しています。``FORM``オブジェクトは送信フォームの値を検証することができます。
+- ``FORM`` はHTMLヘルパに関して低レベルの実装を提供します。``FORM``オブジェクトはHTMLへとシリアライズすることができ、そこに含まれるフィールドについて把握しています。``FORM``オブジェクトは送信フォームの値を検証することができます。
 - ``FORM`` provides a low-level implementation in terms of HTML helpers. A ``FORM`` object can be serialized into HTML and is aware of the fields it contains. A ``FORM`` object knows how to validate submitted form values.
 - ``SQLFORM`` は、作成、更新、削除のフォームを、既存のデータベーステーブルから構築するための高レベルのAPIを提供します。
 - ``SQLFORM`` provides a high-level API for building create, update and delete forms from an existing database table.

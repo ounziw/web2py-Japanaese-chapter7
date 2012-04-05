@@ -2457,7 +2457,7 @@ class sample_validator:
         return format(value)
 ``:code
 
-すなわち、値を検証するために呼ばれたとき、バリデータは``(x, y)``というタプルを返します。``y``が``None``の場合、値は検証を通過し、``x``は通過した値を保持します。たとえば、バリデータが値に整数であることを要求する場合、``x``は``int(value)``に変換されます。値が検証を通過しない場合は、``x``は入力値を保持し、``y``は検証の失敗を説明するエラーメッセージを保持します。このエラーメッセージは、有効でないフォームにエラーを報告するために使用されます。
+すなわち、値を検証するために呼ばれたとき、バリデータは``(x, y)``というタプルを返します。``y``が``None``の場合、値は検証を通過し、``x``は通過した値を保持します。たとえば、バリデータが値に整数であることを要求する場合、``x``は``int(value)``に変換されます。値が検証を通過しない場合は、``x``は入力値を保持し、``y``は検証の失敗を説明するエラーメッセージを保持します。このエラーメッセージは、値が妥当でないフォームにエラーを報告するために使用されます。
 i.e., when called to validate a value, a validator returns a tuple ``(x, y)``. If ``y`` is ``None``, then the value passed validation and ``x`` contains a parsed value. For example, if the validator requires the value to be an integer, ``x`` is converted to ``int(value)``. If the value did not pass validation, then ``x`` contains the input value and ``y`` contains an error message that explains the failed validation. This error message is used to report the error in forms that do not validate.
 
 バリデータは``formatter``メソッドも持つことが可能です。これは、``__call__``が行うものと逆の変換を行う必要があります。たとえば、``IS_DATE``に対するソースコードを考えてみます：

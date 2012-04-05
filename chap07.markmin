@@ -1902,7 +1902,7 @@ requires = [IS_INT_IN_RANGE(0, 8), IS_IN_SET([2, 3, 5, 7],
           error_message='must be prime and less than 10')]
 ``:code
 
-辞書型やタプルのリストをを使ってより記述的なドロップダウンリストを作成することもできます。
+辞書型やタプルのリストを使ってより記述的なドロップダウンリストを作成することもできます。
 You may also use a dictionary or a list of tuples to make the drop down list more descriptive:
 ``
 #### Dictionary example:

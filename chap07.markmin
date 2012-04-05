@@ -1918,7 +1918,7 @@ requires = IS_IN_SET([('A','Apple'),('B','Banana'),('C','Cherry')])
 The ``IS_IN_SET`` validator has an optional attribute ``multiple=False``. If set to True, multiple values can be stored in one field. The field should be of type ``list:integer`` or ``list:string``. ``multiple`` references are handled automatically in create and update forms, but they are transparent to the DAL. We strongly suggest using the jQuery multiselect plugin to render multiple fields.
 
 ------
-``multiple=True``の場合、``IS_IN_SET``は``zero``や他の値を許可します。つまり、何も選択していないフィールドを許可するということになります。``multiple``はそれぞれ選択できる最小と最大（排他的）だる``a``と``b``を持つ、フォーム``(a,b)``のタプルを使用することもできます。
+``multiple=True``の場合、``IS_IN_SET``は``zero``や他の値を許可します。つまり、何も選択していないフィールドを許可するということになります。``multiple``はそれぞれ選択できる最小と最大（排他的）である``a``と``b``を持つ、フォーム``(a,b)``のタプルを使用することもできます。
 Note that when ``multiple=True``, ``IS_IN_SET`` will accept ``zero`` or more values, i.e. it will accept the field when nothing has been selected. ``multiple`` can also be a tuple of the form ``(a,b)`` where ``a`` and ``b`` are the minimum and (exclusive) maximum number of items that can be selected respectively.
 ------
 

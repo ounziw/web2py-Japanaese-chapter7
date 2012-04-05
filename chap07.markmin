@@ -1914,7 +1914,7 @@ requires = IS_IN_SET([('A','Apple'),('B','Banana'),('C','Cherry')])
 
 ##### ``IS_IN_SET``とタグ付け
 
-``IS_IN_SET``バリデータは``multiple=False``というオプション属性を持ちます。これがTrueに設定されている場合、複数の値を1つのフィールドに格納することができます。フィールドの型は、``list:integer``か``list:string``にしてください。multiple参照は、作成と更新フォームにおいて自動的に処理されます。しかし、DALに対して透過的ではありません。multipleフィールドをレンダリングするためには、jQueryのmultiselectプラグインを使用することを強く勧めます。
+``IS_IN_SET``バリデータは``multiple=False``というオプション属性を持ちます。これがTrueに設定されている場合、複数の値を1つのフィールドに格納することができます。フィールドの型は、``list:integer``か``list:string``にしてください。``multiple``参照は、作成と更新フォームにおいて自動的に処理されます。しかし、DALに対して透過的ではありません。multipleフィールドをレンダリングするためには、jQueryのmultiselectプラグインを使用することを強く勧めます。
 The ``IS_IN_SET`` validator has an optional attribute ``multiple=False``. If set to True, multiple values can be stored in one field. The field should be of type ``list:integer`` or ``list:string``. ``multiple`` references are handled automatically in create and update forms, but they are transparent to the DAL. We strongly suggest using the jQuery multiselect plugin to render multiple fields.
 
 ------

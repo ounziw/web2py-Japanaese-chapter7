@@ -441,7 +441,7 @@ In the new controller, you do not need to build a ``FORM``, since the ``SQLFORM`
 この自動的に生成されたフォームは、前述の低レベルのフォームよりも複雑です。第1に、これはテーブルの行を含み、各行は3つのカラムを持っています。最初のカラムはフィールドの名前を保持しています(``db.person``から決定されます)。第2のカラムは入力フィールドを保持します(最終的にエラーメッセージも保持します)。第3のカラムは省略可能で空になっています(``SQLFORM``のコンストラクタにおいてフィールドを用いて入力される可能性があります)。
 The automatically generated form is more complex than the previous low-level form. First of all, it contains a table of rows, and each row has three columns. The first column contains the field labels (as determined from the ``db.person``), the second column contains the input fields (and eventually error messages), and the third column is optional and therefore empty (it can be populated with the fields in the ``SQLFORM`` constructor).
 
-フォームのすべてのタグには、テーブルとフィールドの名前に由来する名前が付けられています。これによりCSSとJavaScriptを用いてフォームをカスタマイズするのが容易になります。この機能については、第10章で詳しく説明します。
+フォームのすべてのタグには、テーブルとフィールドの名前に由来する名前が付けられています。これによりCSSとJavaScriptを用いてフォームをカスタマイズするのが容易になります。この機能については、第11章で詳しく説明します。
 All tags in the form have names derived from the table and field name. This allows easy customization of the form using CSS and JavaScript. This capability is discussed in more detail in Chapter 11.
 
 ここでより重要なのは、``accepts``メソッドがより多くの仕事をすることです。前回の場合と同様、入力の検証を行いますが、加えて、入力が検証を通ったら、データベースに対して新規レコードの挿入を実行し、``form.vars.id``に新規レコードのユニークな"id"を格納します。

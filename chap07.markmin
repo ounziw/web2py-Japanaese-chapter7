@@ -1814,7 +1814,7 @@ The comparison is made with Python Decimal arithmetic.
 The minimum and maximum limits can be None, meaning no lower or upper limit,
 respectively.
 
-``dot``引数はオプションで少数を区切る記号を国際化できます。
+``dot``引数はオプションで小数を区切る記号を国際化できます。
 The ``dot`` argument is optional and allows you to internationalize the symbol used to separate the decimals.
 
 

@@ -813,7 +813,7 @@ def display_form():
     return dict(form=form)
 ``:code
 
-``SQLFORM``は"image_filename"フィールドを表示していないことに注意してください。"display_form"アクションは、``request.vars.image``のファイル名を``form.vars.image_filename``に移動します。これにより、``accepts``においてそれを処理し、データベースに保存することができるようになります。ダウンロード関数は、そのファイルを配信する前に、元のファイル名をデータベースにおいてチェックし、Content-Dispositionヘッダにおいて使用します。
+``SQLFORM``は"image_filename"フィールドを表示していないことに注意してください。"display_form"アクションは、``request.vars.image``のファイル名を``form.vars.image_filename``に移動します。これにより、``accepts``においてファイル名を処理し、データベースに保存することができるようになります。ダウンロード関数は、そのファイルを配信する前に、元のファイル名をデータベースにおいてチェックし、Content-Dispositionヘッダにおいて使用します。
 Notice that the ``SQLFORM`` does not display the "image_filename" field.
 The "display_form" action moves the filename of the ``request.vars.image``
 into the ``form.vars.image_filename``, so that it gets processed by ``accepts`` and

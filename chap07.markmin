@@ -2344,7 +2344,7 @@ requires = [IS_STRONG(),CRYPT(key='sha512:thisisthekey')]
 ``CRYPT``はデフォルト値がゼロである``min_length``引数を取ることもできます。
 ``CRYPT`` also takes a ``min_length`` argument which defaults to zero.
 
-#### Database validators
+#### データベースのバリデータ
 
 ##### ``IS_NOT_IN_DB``
 ``IS_NOT_IN_DB``:inxx

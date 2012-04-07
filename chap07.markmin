@@ -565,7 +565,7 @@ form = SQLFORM(..., hidden=dict(a='b'))
 ``SQLFORM`` creates a new db record when the form is accepted. Assuming ``form=SQLFORM(db.test)``:code, then the id of the last-created record will be accessible in ``myform.vars.id``.
 
 ``delete record``:inxx
-レコードを``SQLFORM``コンストラクタのオプション的な第2の引数に渡した場合、フォームはそのレコードに対するUPDATEフォームになります。つまり、フォームがサブミットされると既存のレコードが更新され新しいレコードは挿入されません。``deletable=True``属性を設定して場合は、UPDATEフォームは"Chceck to delete"というチェックボックスを表示します。チェックされると、レコードは削除されます。
+レコードを``SQLFORM``コンストラクタのオプション的な第2の引数に渡した場合、フォームはそのレコードに対するUPDATEフォームになります。つまり、フォームがサブミットされると既存のレコードが更新され新しいレコードは挿入されません。``deletable=True``属性を設定して場合は、UPDATEフォームは"Check to delete"というチェックボックスを表示します。チェックされると、レコードは削除されます。
 ``delete record``:inxx
 If you pass a record as the optional second argument to the ``SQLFORM`` constructor, the form becomes an UPDATE form for that record. This means that when the form is submitted the existing record is updated and no new record is inserted. If you set the argument ``deletable=True``, the UPDATE form displays a "check to delete" checkbox. If checked, the record is deleted.
 

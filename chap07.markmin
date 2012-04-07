@@ -822,7 +822,7 @@ stored in the database. The download function, before serving the file, checks i
 #### ``autodelete``
 ``autodelete``:inxx
 
-レコードを削除する際に、``SQLFORM``はレコードによって参照された物理的なアップロード・ファイルを削除することはありません。その理由は、web2pyがそのファイルが他のテーブルによって使用/リンクされているか、また、他の目的で使用されているかどうか知ることができないからです。対応するレコードが削除されたとき、実際のファイルを削除しても安全だと判断できる場合は、次のようにしてそうすることができます：
+レコードを削除する際に、``SQLFORM``はレコードによって参照された物理的なアップロード・ファイルを削除することはありません。その理由は、web2pyがそのファイルが他のテーブルによって使用/リンクされているか、また、他の目的で使用されているかどうか知ることができないからです。対応するレコードが削除されたとき、実際のファイルを削除しても安全だと判断できる場合は、次のようにして削除できます：
 The ``SQLFORM``, upon deleting a record, does not delete the physical uploaded file(s) referenced by the record. The reason is that web2py does not know whether the same file is used/linked by other tables or used for other purpose. If you know it is safe to delete the actual file when the corresponding record is deleted, you can do the following:
 ``
 db.define_table('image',

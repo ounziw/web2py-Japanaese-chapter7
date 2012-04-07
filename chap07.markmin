@@ -1889,7 +1889,7 @@ requires = IS_IN_SET(['a', 'b', 'c'],zero=T('choose one'),
          error_message='must be a or b or c')
 ``:code
 
-zero引数は省略可能で、デフォルトで選択されたオプション、つまり、``IS_IN_SET``バリデータ自身によって受理されないオプション、のテキストを決めます。"chooose one"オプションを望まない場合は、``zero=None``としてください。
+zero引数は省略可能で、デフォルトで選択されたオプション、つまり、``IS_IN_SET``バリデータ自身によって受理されないオプション、のテキストを決めます。"choose one"オプションを望まない場合は、``zero=None``としてください。
 The zero argument is optional and it determines the text of the option selected by default, an option which is not accepted by the ``IS_IN_SET`` validator itself. If you do not want a "choose one" option, set ``zero=None``.
 
 ``zero``オプションはリビジョン(1.67.1)において導入されました。これは、アプリケーションを壊さないという意味で後方互換性を破りませんでした。しかし、以前は``zero``オプションがなかったので、その挙動は変化しました。

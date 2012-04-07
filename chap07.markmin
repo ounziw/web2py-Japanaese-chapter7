@@ -247,7 +247,7 @@ your name:
 シリアライズしたフォームにあるDIVのクラス"error"の存在に注意してください。web2pyはこのエラーメッセージをフォームに挿入し、検証を通過しなかったフィールドについて訪問者に知らせます。サブミットの際の``accepts``メソッドは、フォームがサブミットされたかどうかを判断し、フィールド"name"が空でないか、また、それが要求されているかをチェックし、最終的に、バリデータからフォームにエラーメッセージを挿入します。
 Notice the presence of a DIV of class "error" in the serialized form. web2py inserts this error message in the form to notify the visitor about the field that did not pass validation. The ``accepts`` method, upon submission, determines that the form is submitted, checks whether the field "name" is empty and whether it is required, and eventually inserts the error message from the validator into the form.
 
-基底の"layout.html"ビューは、DIVクラスの"error"を処理することが想定されいます。デフォルトのレイアウトはjQueryのエフェクトを使用して、エラーを可視化し、赤い背景とともにスライドダウンさせます。詳細は第11章を参照してください。
+基底の"layout.html"ビューは、DIVクラスの"error"を処理することが想定されています。デフォルトのレイアウトはjQueryのエフェクトを使用して、エラーを可視化し、赤い背景とともにスライドダウンさせます。詳細は第11章を参照してください。
 The base "layout.html" view is expected to handle DIVs of class "error". The default layout uses jQuery effects to make errors appear and slide down with a red background. See Chapter 11 for more details.
 
 #### ``keepvalues``

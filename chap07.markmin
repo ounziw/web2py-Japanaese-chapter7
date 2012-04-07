@@ -1406,7 +1406,7 @@ crud.search(table, query, queries, query_labels, fields, field_labels, zero, sho
 - ``log`` is the log message. Log messages in CRUD see variables in the ``form.vars`` dictionary such as "%(id)s".
 - ``message``はフォームが受理されたときのflashメッセージです。
 - ``message`` is the flash message upon form acceptance.
-- ``ondelete``は、"update"フォームを介してレコードが削除されるときに、`onaccept``の場所で呼ばれます。
+- ``ondelete``は、"update"フォームを介してレコードが削除されるときに、``onaccept``の場所で呼ばれます。
 - ``ondelete`` is called in place of ``onaccept`` when a record is deleted via an "update" form.
 - ``deletable``は、"update"フォームがdeleteオプションを持つかどうかを決めます。
 - ``deletable`` determines whether the "update" form should have a delete option.

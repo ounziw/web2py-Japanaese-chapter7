@@ -661,7 +661,7 @@ and insert the form in the associated "default/display_manual_form.html" view:
 </form>
 ``:code
 
-ここで、アクションはフォームを返していないことに注意してください。なぜならビューに渡す必要がないからです。ビューはHTMLにおいて手動で作成されたフォームを含んでいます。フォームは、隠れフィールド"_formname"を含んでいて、それはアクションの``accepts``の引数で指定されたformnameと必ず同じにしなければなりません。web2pyは同じページに複数のフォームがある場合に、どれからサブミットされたかを判断するのに、フォームの名前を使用します。ページが単一のフォームからなる場合、``formname=None``と設定して、ビューにおける隠れフィールドを見送ることができます。
+ここで、アクションはフォームを返していないことに注意してください。なぜならビューに渡す必要がないからです。ビューはHTMLにおいて手動で作成されたフォームを含んでいます。フォームは、隠れフィールド"_formname"を含んでいて、それはアクションの``accepts``の引数で指定された``formname``と必ず同じにしなければなりません。web2pyは同じページに複数のフォームがある場合に、どれからサブミットされたかを判断するのに、フォームの名前を使用します。ページが単一のフォームからなる場合、``formname=None``と設定して、ビューにおける隠れフィールドを見送ることができます。
 Notice that the action does not return the form because it does not need to pass it to the view. The view contains a form created manually in HTML. The form contains a hidden field "_formname" that must be the same ``formname`` specified as an argument of ``accepts`` in the action. web2py uses the form name in case there are multiple forms on the same page, to determine which one was submitted. If the page contains a single form, you can set ``formname=None`` and omit the hidden field in the view.
 
 ``form.accepts``はデータベーステーブル``db.person``のフィールドに適合するデータを``response.vars``内から検索します。これらのフィールドは以下のようにHTMLで宣言することができます。

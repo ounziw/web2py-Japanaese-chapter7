@@ -941,7 +941,7 @@ After submission, ``form.vars.agree`` will contain the status of the checkbox, w
 
 #### データベースIOなしの``SQLFORM``
 
-``SQLFORM``を使用してデータベーステーブルからフォームを生成し、サブミットしたフォームをそのまま検証するが、データベースにおいて自動的なINSERT/UPDATE/DELTEを行いたくない場合があります。たとえば、1つのフィールドが他の入力フィールドから計算される必要がある場合です。また、挿入されたデータに対して標準の検証では達成できない追加の検証を行いたい場合です。
+``SQLFORM``を使用してデータベーステーブルからフォームを生成し、サブミットしたフォームをそのまま検証するが、データベースにおいて自動的なINSERT/UPDATE/DELETEを行いたくない場合があります。たとえば、1つのフィールドが他の入力フィールドから計算される必要がある場合です。また、挿入されたデータに対して標準の検証では達成できない追加の検証を行いたい場合です。
 There are times when you want to generate a form from a database table using ``SQLFORM`` and you want to validate a submitted form accordingly, but you do not want any automatic INSERT/UPDATE/DELETE in the database. This is the case, for example, when one of the fields needs to be computed from the value of other input fields. This is also the case when you need to perform additional validation on the inserted data that cannot be achieved via standard validators.
 
 これは、次のものを：

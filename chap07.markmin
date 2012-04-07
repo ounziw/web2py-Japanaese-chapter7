@@ -577,7 +577,7 @@ If a form is submitted and the delete checkbox is checked the attribute
 ``form.deleted`` is set to ``True``.
 ------
 
-たとえば、前述の例のコントローラを修正し、次のように、URLのパスにおけて追加の整数引数を渡すことができます。
+たとえば、前述の例のコントローラを修正し、次のように、URLのパスに追加の整数引数を渡すことができます。
 You can modify the controller of the previous example so that when we pass an additional integer argument in the URL path, as in:
 ``
 /test/default/display_form/2

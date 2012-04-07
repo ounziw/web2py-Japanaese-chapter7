@@ -1281,7 +1281,7 @@ Crud always detects whether a record being edited has been modified by a third p
 ``
 form.process(detect_record_change=True)``
 
-そしてこにょうに設定します：
+そしてこのように設定します：
 and it is set in:
 
 ``

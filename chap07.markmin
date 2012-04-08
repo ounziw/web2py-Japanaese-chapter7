@@ -2826,7 +2826,7 @@ which looks like this:
 "children"リンクが追加されています。通常の``grid``を利用して追加の``links``を作成することもできますがその場合は異なる機能を示しています。``smartgrid``を利用することで自動的に作成され同じガジェットで処理されます。
 Notice the extra "children" links. One could create the extra ``links`` using a regular ``grid`` but they would point to a different action. With a ``smartgrid`` they are created automatically and handled by the same gadget.
 
-また、ある親の"children"リンクをクリックするとその親に紐づく（これは明らかですが）子供だけのリストが取得できます。しかし、新しい子供を追加しようとすると、その子供の親の値は選択された親（ガジェットに関連るパンくずリストで表示）から自動的に設定されます。そのフィールドの親の値は上書くこともできます。読み取り専用にすることで上書きを防げます。
+また、ある親の"children"リンクをクリックするとその親に紐づく（これは明らかですが）子供だけのリストが取得できます。しかし、新しい子供を追加しようとすると、その子供の親の値は選択された親（ガジェットに関連するパンくずリストで表示）から自動的に設定されます。そのフィールドの親の値は上書くこともできます。読み取り専用にすることで上書きを防げます。
 Also notice that when clicking on the "children" link for a given parent one only gets the list of children for that parent (and that is obvious) but also notice that if one now tried to add a new child, the parent value for the new child is automatically set to the selected parent (displayed in the breadcrumbs associated to the gadget). The value of this field can be overwritten. We can prevent this by making it readonly:
 
 ``
